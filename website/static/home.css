@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding:0;
 }
 
 body, html {
@@ -261,6 +262,46 @@ ul.menu {
     font-weight: bolder;
     padding: 50px 0;
 }
+
+/*=========================Results=========================*/
+.results {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.results-text {
+    flex: 1;
+    /*width: 100px;*/
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.results-text p,
+.results-text input,
+.results-text a {
+    flex: 1;
+    font-family: Roboto;
+}
+
+.results-text h2 {
+    flex: 1;
+    font-family: Barlow Condensed;
+    font-size: 60px;
+    color: #191D34;
+    width: 450px;
+}
+
+.results-text p {
+    width: 500px;
+    line-height: 30px;
+    color: #506172;
+    font-weight: bolder;
+    padding: 50px 0;
+}
+
 /*==========================Responsive=============================*/
 @media all and (max-width: 1172px) {
     .banner-text-item .form {
